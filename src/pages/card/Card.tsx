@@ -43,8 +43,13 @@ const informacion = [
         "Mientras el fuego se desvanece y el mundo cae en ruinas, la desarrolladora FROMSOFTWARE  y el director Hidetaka Miyazaki continúan la amada serie de referencia en su género con Dark Souls III. Fans y nuevos jugadores podrán dejarse perder en la jugabilidad distintiva y gráficos inmersivos. Ahora solo quedan las brasas..."
     ),
     createData(
+        "Sekiro",
+        "https://larepublica.pe/resizer/VvOUmzK2Tce_8yk6qbszezkjLlQ=/1250x735/top/smart/cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/ANJXNQF3WFG3TEN3IBZ5EXAAKY.png",
+        'En Sekiro: Shadows Die Twice, encarnarás al "lobo de un solo brazo", un guerrero desfigurado y caído en desgracia rescatado de los brazos de la muerte. Tras comprometerte a proteger a un joven lord, descendiente de un antiguo linaje, te convertirás en el objetivo de varios enemigos, incluido el peligroso clan Ashina. Cuando el joven lord es capturado, nada podrá detener tu peligrosa búsqueda para recuperar tu honor, ni siquiera la muerte.'
+    ),
+    createData(
         "Demon Soul",
-        "https://www.somosxbox.com/wp-content/uploads/2020/09/Demons-Souls-llegar%C3%ADa-a-Xbox-Series-X-en-el-futuro.jpg",
+        "https://i.blogs.es/1a0ad8/demons-souls-screenshot-05-disclaimer-en-30sept20/1366_2000.jpeg",
         'Boletaria queda marginada del mundo exterior y a los caballeros que se atreven a adentrarse en la densa niebla para liberar a la tierra de su aprieto, no los ven nunca más. Como guerrero solitario que desafió a la perniciosa niebla, debes enfrentar el desafío más duro para ganarte el título "Matademonios" y enviar al Antiguo de vuelta a su letargo.'
     ),
     createData(
