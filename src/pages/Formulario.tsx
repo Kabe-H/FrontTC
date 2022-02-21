@@ -1,4 +1,5 @@
 import { Box, Button, Card, FormControl, Grid, TextField } from "@mui/material";
+import router from "next/router";
 import React from "react";
 import Layaout from "src/components/layaout";
 
@@ -52,8 +53,8 @@ export default function Formulario() {
 
             >
               <Grid item xs="auto">
-                <Button variant="contained" style={{ margin: 5 }}>Aceptar</Button>
-                <Button variant="contained" style={{ margin: 5 }}>Cancelar</Button>
+                <Button variant="contained" onClick= {()=>router.push(`/`)} style={{ margin: 5 }}>Aceptar</Button>
+                <Button variant="contained" onClick= {()=>router.push(`/`)} style={{ margin: 5 }}>Cancelar</Button>
               </Grid>
             </Grid>
           </Card>
