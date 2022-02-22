@@ -10,6 +10,7 @@ export default function Formulario() {
   return (
     <Layaout>
 
+
       <Grid
         container
         direction="column"
@@ -53,8 +54,8 @@ export default function Formulario() {
 
             >
               <Grid item xs="auto">
-                <Button variant="contained" onClick= {()=>router.push(`/`)} style={{ margin: 5 }}>Aceptar</Button>
-                <Button variant="contained" onClick= {()=>router.push(`/`)} style={{ margin: 5 }}>Cancelar</Button>
+                <Button variant="contained" onClick={() => router.push(`/`)} style={{ margin: 5 }}>Aceptar</Button>
+                <Button variant="contained" onClick={() => router.push(`/`)} style={{ margin: 5 }}>Cancelar</Button>
               </Grid>
             </Grid>
           </Card>

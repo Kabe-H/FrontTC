@@ -1,7 +1,7 @@
 import { AppBar, Avatar, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Tooltip, Typography } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
-import React from "react";
 import router from "next/router";
+import React from "react";
 
 const pages = ['Registrarte', 'Tu Pagina', 'Salir'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -84,7 +84,7 @@ const ResponsiveAppBar = () => {
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         <Button
-                            onClick={()=>router.push(`/Formulario`)}
+                            onClick={() => router.push(`/Formulario`)}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
                             Registrar
