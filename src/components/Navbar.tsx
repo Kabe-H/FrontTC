@@ -2,6 +2,7 @@ import { AppBar, Avatar, Box, Button, Container, IconButton, Menu, MenuItem, Too
 import MenuIcon from '@mui/icons-material/Menu';
 import router from "next/router";
 import React from "react";
+import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 
 const pages = ['Registrarte', 'Tu Pagina', 'Salir'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -94,7 +95,7 @@ const ResponsiveAppBar = () => {
                     <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title="Open settings">
                             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                                <PermIdentityIcon sx={{ fontSize: 40 }} />
                             </IconButton>
                         </Tooltip>
                         <Menu
