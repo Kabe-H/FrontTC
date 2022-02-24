@@ -14,7 +14,7 @@ export default function Formulario() {
 
   const [open, setOpen] = React.useState(false);
 
-  const handleClickOpen = (valores) => {
+  const handleClickOpen = (valores:any) => {
     setOpen(true);
     console.log(valores);
     console.log("Formulario enviado");
@@ -32,25 +32,54 @@ export default function Formulario() {
       <Formik
 
         initialValues={{
-          name: 'Carlos',
-          email: '',
+          nombre: '',
+          correo: '',
+          password: '',
         }}
 
         validate={(valores) => {
-          let error = {};
-          if (!valores.name) {
-            error.name = "El nombre es requerido";
+          let errores = {
+            nombre:'',
+            correo:'',
+            password: ''
+          };
+          //Validación nombre
+          if (!valores.nombre) {
+            errores.nombre = "El nombre es requerido.";
+          } else if(!/^[a-zA-ZÁ-ÿ\s]{1,40}$/.test(valores.nombre)){
+            errores.nombre = "El nombre solo puede contener letras y espacios"
           }
-          return error;
+          //Validación correo
+          if (!valores.correo) {
+            errores.correo = "Es obligatorio insertar un correo.";
+          }else if(!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(valores.correo)){
+            errores.correo = "El correo solo puede contener letras, numeros, puntos, guiones y guión bajo."
+          }
+          //Validación password
+          if (!valores.password) {
+            errores.password = "Por favor registre una contraseña.";
+          } else if(!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/.test(valores.password)){
+            errores.password= "La contraseña debe de tener: "+
+            "Minimo 8 caracteres" +
+            "Maximo 15"+<br />
+            "Al menos una letra mayúscula"+<br />
+            "Al menos una letra minucula"+<br />
+            "Al menos un dígito"+<br />
+            "No espacios en blanco"+<br />
+            "Al menos 1 caracter especial"
+          }
+          
+          
+          return errores;
         }}
 
-        onSubmit={() => {
-          console.log("formulario enviado")
-          console.log(valores.name)
+        onSubmit={(valores) => {
+          console.log("Formulario enviado")
+          console.log(valores)
         }}
 
       >
-        {({ handleSubmit, values, handleChange }) => (
+        {({ handleSubmit, values, errors, handleChange, handleBlur, touched}) => (
 
           <form className="formulario" onSubmit={handleSubmit}>
             <Grid
@@ -71,9 +100,11 @@ export default function Formulario() {
                       name="nombre"
                       label="Nombre"
                       variant="outlined"
-                      value={values.name}
+                      value={values.nombre}
                       onChange={handleChange}
+                      onBlur={handleBlur}
                       style={{ width: 500 }} />
+                      {touched.nombre && errors.nombre && <div className="error">{errors.nombre}</div>}
                   </Grid>
                   <Grid item xs="auto" style={{ padding: 5 }}>
                     <LocalizationProvider dateAdapter={AdapterDateFns}>
@@ -90,22 +121,28 @@ export default function Formulario() {
                   <Grid item xs="auto" style={{ padding: 5 }}>
                     <TextField
                       fullWidth
-                      id="mail"
+                      id="correo"
                       label="Mail"
-                      type="text"
-                      value={values.email}
-                      // onChange={handleChange}
+                      type="email"
+                      value={values.correo}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
                       style={{ width: 500 }}
                     />
+                    {touched.correo && errors.correo && <div className="error">{errors.correo}</div>}
                   </Grid>
                   <Grid item xs="auto" style={{ padding: 5 }}>
                     <TextField
                       style={{ width: 500 }}
-                      id="outlined-password-input"
+                      id="password"
                       label="Password"
                       type="password"
                       autoComplete="current-password"
+                      value={values.password}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
                     />
+                    {touched.password && errors.password && <div className="error">{errors.password}</div>}
                   </Grid>
                   <Grid
                     container
