@@ -17,11 +17,7 @@ function createData(nombre: string, imagen, info: string) {
 
 const informacion = [
     // comment
-    createData(
-        "Dark Souls",
-        "https://media.vandal.net/master/56347/dark-souls-remastered-2018431697_1.jpg",
-        "Entonces llegó el Fuego. Vuelve a disfrutar del aclamadísimo juego que definió el género y con el que empezó todo. Gracias a una magnífica remasterización, podrás regresar a Lordran con unos impresionantes detalles. Dark Souls Remastered incluye el juego principal y el contenido descargable "
-    ),
+   
     createData(
         "Dark Souls 2",
         "https://www.global-esports.news/wp-content/uploads/2021/11/Dark-Souls-game.jpg",
