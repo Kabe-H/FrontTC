@@ -18,17 +18,17 @@ function createData(nombre: string, imagen, info: string) {
 const informacion = [
     // comment
     createData(
-        "Dark Souls",
+        "CARLITOS JR",
         "https://media.vandal.net/master/56347/dark-souls-remastered-2018431697_1.jpg",
         "Entonces llegó el Fuego. Vuelve a disfrutar del aclamadísimo juego que definió el género y con el que empezó todo. Gracias a una magnífica remasterización, podrás regresar a Lordran con unos impresionantes detalles. Dark Souls Remastered incluye el juego principal y el contenido descargable "
     ),
     createData(
-        "Dark Souls 2",
+        "CARLITOS JR 2",
         "https://www.global-esports.news/wp-content/uploads/2021/11/Dark-Souls-game.jpg",
         "Desarrollado por From Software, Dark Souls II es la muy esperada segunda entrega del exigente juego de 2011 Dark Souls. La acción de la vieja escuela que ofrecía este RPG era algo único que cautivó la imaginación de los jugadores de todo el mundo gracias a sus increíbles desafíos e intensas recompensas emocionalesDark Souls II fusiona la famosa dificultad de la franquicia con nuevas y espectaculares innovaciones jugables que potenciarán tanto el juego en solitario como la experiencia multijugador.Únete a este oscuro viaje y experimenta los sobrecogedores encuentros con enemigos, peligros demoniacos y el reto constante que solo FROM SOFTWARE puede ofrecer."
     ),
     createData(
-        "Bloodborne",
+        "CARLITOS JR 3",
         "https://i.blogs.es/5625e8/bloodborne/1366_2000.jpeg",
         'Enfrenta tus pesadillas mientras buscas respuestas en la antigua ciudad de Yharnam, ahora maldecida por una enfermedad endémica que se propaga por las calles como un fuego arrasador. El peligro, la muerte y la locura merodean en cada esquina de este mundo oscuro y espantoso, y debes descubrir sus secretos más oscuros para poder sobrevivir.'
     ),
