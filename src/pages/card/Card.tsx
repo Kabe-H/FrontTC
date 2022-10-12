@@ -35,7 +35,7 @@ const informacion = [
     createData(
         "Dark Souls 3",
         "https://i.blogs.es/f1c097/dark-souls-3/1366_2000.jpg",
-        "Mientras el fuego se desvanece y el mundo cae en ruinas, la desarrolladora FROMSOFTWARE  y el director Hidetaka Miyazaki continúan la amada serie de referencia en su género con Dark Souls III. Fans y nuevos jugadores podrán dejarse perder en la jugabilidad distintiva y gráficos inmersivos. Ahora solo quedan las brasas..."
+        "Mientras el fuego se desvanece ekll fuegoooooooññññÑÑ::::; y el mundo cae en ruinas, la desarrolladora FROMSOFTWARE  y el director Hidetaka Miyazaki continúan la amada serie de referencia en su género con Dark Souls III. Fans y nuevos jugadores podrán dejarse perder en la jugabilidad distintiva y gráficos inmersivos. Ahora solo quedan las brasas..."
     ),
     createData(
         "Sekiro",
